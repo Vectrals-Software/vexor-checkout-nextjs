@@ -1,7 +1,7 @@
 // src/app/page.tsx
  
 import ProductCard, { Product } from "@/components/product-card";
- 
+import RefundCard from "@/components/refund-card";
 const products: Product[] = [
   {
       id: "item-1",
@@ -29,6 +29,7 @@ export default function Home() {
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
+        <RefundCard />
       </main>
     </div>
   );
