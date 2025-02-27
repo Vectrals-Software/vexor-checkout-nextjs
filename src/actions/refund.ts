@@ -7,12 +7,12 @@ export const handleRefund = async (identifier: string) => {
  
     try {
         const response : VexorRefundResponse = await vexor.refund({
-            platform: 'stripe',
+            platform: 'paypal',
             identifier
         });
  
         if (response.error) {
-            throw new Error(response.error);
+            return {success: false, response}
         }
  
         return { success: true, response };

@@ -20,8 +20,8 @@ const RefundCard: React.FC = () => {
         <div className="border rounded-lg p-4 shadow-sm w-full">
             <h2 className="text-xl font-bold mb-4">Refund Payment</h2>
             <form onSubmit={onSubmit}>
-                <div className="mb-4">
-                    <label htmlFor="identifier" className="block mb-2">
+                <div className="mb-4 text-black">
+                    <label htmlFor="identifier" className="block mb-2 text-white">
                         Payment Identifier
                     </label>
                     <input
